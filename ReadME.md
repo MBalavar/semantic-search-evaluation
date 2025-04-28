@@ -3,7 +3,7 @@ This project benchmarks a pre-trained **SentenceTransformer** model for **semant
 
 ---
 
-## 📚 Dataset
+##  Dataset
 
 - **Name: Home Depot Product Search Relevance Dataset
 - **Source**: [Kaggle Competition - Home Depot Search Relevance](https://www.kaggle.com/c/home-depot-product-search-relevance)
@@ -15,29 +15,29 @@ Note: You must manually download these files from Kaggle and place them in your 
 
 ---
 
-## 🤖 Model Used
+##  Model Used
 
 - **Model Name**: `sentence-transformers/multi-qa-mpnet-base-cos-v1`
 - **Model Type**: Pre-trained semantic search model from [Sentence-Transformers](https://www.sbert.net/)
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
-
+```
 semantic-search-evaluation-home-depot/
 ├── src/
-│   ├── init.py
+│   ├── init__.py
 │   ├── helpers.py        # Preprocessing, merging, cleaning
 │   ├── metrics.py        # NDCG@10, MRR@10 computations
 │   └── evaluate.py       # Evaluation logic (batch, GPU support)
-├── results.csv           # Evaluation results
+├── results/
+│   └── result.csv   # Evaluation results
 ├── run_eval.py           # Launcher script to run the full evaluation
 ├── requirements.txt      # Required Python libraries
 ├── README.md
 ├── .gitignore
-
-
+```
 ---
 
 ## ⚡ Quick Start: How to Reproduce the Results
@@ -71,7 +71,7 @@ semantic-search-evaluation-home-depot/
     python run_eval.py
     ```
 
-✅ This will:
+ This will:
 - Preprocess and clean the data.
 - Merge product titles and descriptions.
 - Create test samples (stratified).
@@ -80,7 +80,7 @@ semantic-search-evaluation-home-depot/
 
 ---
 
-## 📈 Evaluation Metrics
+##  Evaluation Metrics
 
 | Metric | Description |
 |--------|-------------|
@@ -89,13 +89,13 @@ semantic-search-evaluation-home-depot/
 
 ---
 
-## 📢 Notes
+##  Notes
 
 - Evaluation is performed on a stratified 20% sample of the original queries.
 - Only queries with **≥10** candidate products are included to ensure meaningful evaluation.
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 - **Name**: [Mohsen Balavar]
