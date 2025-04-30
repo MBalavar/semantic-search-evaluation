@@ -29,7 +29,7 @@ def map_relevance(score):
 
 def load_and_preprocess(products_path, descriptions_path):
     """
-    Load and preprocess Home Depot train.csv, product_descriptions.csv, and products.csv.
+    Load and preprocess Home Depot train.csv, product_descriptions.csv.
     Returns a clean dataframe ready for evaluation.
     """
 
@@ -49,7 +49,7 @@ def load_and_preprocess(products_path, descriptions_path):
     # Map relevance scores to classes
     df['relevance_mapped'] = df['relevance'].apply(map_relevance)
 
-    # Filter queries with enough products (>=10 results)
+    # Filter queries with enough results (>=10 results)
     query_counts = df.groupby('search_term').size().reset_index(name='num_results')
     valid_queries = query_counts[query_counts['num_results'] >= 10]['search_term']
     df = df[df['search_term'].isin(valid_queries)]
@@ -65,6 +65,6 @@ def load_and_preprocess(products_path, descriptions_path):
     df.columns = ['query', 'title', 'description', 'relevance']
 
     df.to_csv('./test_clean.csv', index=False)
-    print("✅ Saved cleaned test set to 'test_clean.csv'.")
+    print("Saved cleaned test set to 'test_clean.csv'.")
 
     return df
