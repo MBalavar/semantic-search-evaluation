@@ -45,7 +45,7 @@ semantic-search-evaluation-home-depot/
 1. **Clone this repository**:
     ```bash
     git clone https://github.com/MBalavar/semantic-search-evaluation-home-depo.git
-    cd semantic-search-evaluation-home-depot
+    cd semantic-search-evaluation-home-depo
     ```
 
 2. **Create and activate a virtual environment**:
