@@ -16,7 +16,10 @@ df_test = load_and_preprocess(products_path, descriptions_path)
 # Evaluate using the cleaned test set
 results, timing_info = evaluate(df_test)
 
-
+# Create the 'results' directory if it doesn't exist
+if not os.path.exists('results'):
+    os.makedirs('results')
+  
 # Save evaluation results
 results.to_csv('results/result.csv', index=False)
 
