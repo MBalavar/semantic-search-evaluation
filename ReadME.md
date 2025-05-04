@@ -44,7 +44,7 @@ semantic-search-evaluation-home-depot/
 
 1. **Clone this repository**:
     ```bash
-    git clone https://github.com/MBalavar/semantic-search-evaluation-home-depo.git
+    git clone https://github.com/MBalavar/semantic-search-home-depo.git
     cd semantic-search-evaluation-home-depo
     ```
 
