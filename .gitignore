@@ -3,7 +3,5 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 .DS_Store
-results/*.csv
-product_descriptions.csv
-train.csv
-test_clean.csv
+datasets/
+outputs/
