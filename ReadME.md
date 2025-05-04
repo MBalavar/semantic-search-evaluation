@@ -5,7 +5,7 @@ This project benchmarks a pre-trained **SentenceTransformer** model for **semant
 
 ##  Dataset
 
-- **Name: Home Depot Product Search Relevance Dataset
+- **Name**: Home Depot Product Search Relevance Dataset
 - **Source**: [Kaggle Competition - Home Depot Search Relevance](https://www.kaggle.com/c/home-depot-product-search-relevance)
 - **Files Used**:
   - `train.csv` 
@@ -44,7 +44,7 @@ semantic-search-evaluation-home-depot/
 
 1. **Clone this repository**:
     ```bash
-    git clone https://github.com/YOUR_USERNAME/semantic-search-evaluation-home-depot.git
+    git clone https://github.com/MBalavar/semantic-search-evaluation-home-depot.git
     cd semantic-search-evaluation-home-depot
     ```
 
