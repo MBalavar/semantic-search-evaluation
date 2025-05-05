@@ -56,10 +56,8 @@ semantic-search-evaluation/
 
 1. **Clone this repository**:
     ```bash
-=======
     git clone https://github.com/Mbalavar/semantic-search-evaluation.git
     cd semantic-search-evaluation
->>>>>>> 3cc7aa8 (Add MSMARCO dataset for evaluation of the model)
     ```
 
 2. **Create and activate a virtual environment**:
