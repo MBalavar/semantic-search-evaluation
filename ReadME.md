@@ -14,7 +14,7 @@ This project benchmarks a pre-trained **SentenceTransformer** model for **semant
 Note: You must manually download these files from Kaggle and place them in your project folder.
 
 
-- **Name: Home Depot Product Search Relevance Dataset
+- **Name**: Home Depot Product Search Relevance Dataset
 - **Source**: [BEIR Benchmark Download Page](https://github.com/beir-cellar/beir#download-datasets)
 - **Files Used**: Files will be downloaded automatically.
   - `corpus.jsonl` 
